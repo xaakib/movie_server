@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "21779095078",
+    "firebase_url": "https://movie-server-426b7.firebaseio.com",
+    "project_id": "movie-server-426b7",
+    "storage_bucket": "movie-server-426b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21779095078:android:3204451a5c7438641cd0e7",
+        "android_client_info": {
+          "package_name": "com.example.movie_server"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21779095078-sh9q43d237si6v284c40krl1s42o878q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChaKla3bN3TZCoT2zza8gpmP5u7oQt2fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21779095078-sh9q43d237si6v284c40krl1s42o878q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
