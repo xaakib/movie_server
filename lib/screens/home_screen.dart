@@ -1,77 +1,74 @@
 import 'package:flutter/material.dart';
-import 'package:movie_server/model/data.dart';
+import 'package:movie_server/screens/populer_horizontal.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 200,
-                color: Colors.red,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 5),
+      child: Scaffold(
+        body: CustomScrollView(
+          slivers: [
+            SliverAppBar(
+              elevation: 5,
+              expandedHeight: 200,
+              flexibleSpace: Image.asset(
+                "assets/images/name.png",
+                fit: BoxFit.cover,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                child: Text(
-                  "Populer",
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
+              actions: [
+                IconButton(
+                    icon: Icon(
+                      Icons.search,
+                      size: 28,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+                IconButton(
+                    icon: Icon(
+                      Icons.people,
+                      size: 28,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+              ],
+              floating: true,
+              leading: IconButton(
+                icon: Icon(
+                  Icons.menu,
+                  color: Colors.white,
                 ),
+                onPressed: () {},
               ),
-              Container(
-                width: MediaQuery.of(context).size.width,
-                margin: EdgeInsets.only(left: 10),
-                height: 230,
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  itemCount: populer.length,
-                  itemBuilder: (context, index) {
-                    return _populerCollection();
-                  },
-                ),
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: 50,
-        ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Text(
-                "Comeing Soon",
+              title: Text(
+                "Movie Sever",
                 style: TextStyle(
-                  fontSize: 30,
+                  color: Colors.white,
+                  fontSize: 28,
                   fontWeight: FontWeight.bold,
+                  letterSpacing: -1.2,
                 ),
               ),
+              centerTitle: false,
             ),
-            Container(
-              margin: EdgeInsets.only(left: 10),
-              height: 230,
-              width: MediaQuery.of(context).size.width,
-              child: ListView.builder(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemCount: populer.length,
-                itemBuilder: (context, index) {
-                  return _populerCollection();
-                },
-              ),
+            SliverPadding(padding: EdgeInsets.only(top: 20)),
+            SliverToBoxAdapter(
+              child: PopulerRowContainer(),
+            ),
+            SliverPadding(padding: EdgeInsets.only(top: 20)),
+            SliverToBoxAdapter(
+              child: PopulerRowContainer(),
+            ),
+            SliverPadding(padding: EdgeInsets.only(top: 20)),
+            SliverToBoxAdapter(
+              child: PopulerRowContainer(),
+            ),
+            SliverPadding(padding: EdgeInsets.only(top: 20)),
+            SliverToBoxAdapter(
+              child: PopulerRowContainer(),
             ),
           ],
         ),
-        ],
       ),
     );
   }
