@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:movie_server/data/data.dart';
 import 'package:movie_server/model/populer.dart';
-import 'package:movie_server/screens/requerment_row.dart';
+import 'package:movie_server/screens/requerment/requerment_class.dart';
 
-class DetailScreen extends StatelessWidget {
+class HinidDubbedDetails extends StatelessWidget {
   var populer;
   final double expanded_height = 400;
   final double rounded_container_height = 50;
 
-  DetailScreen(this.populer);
+  HinidDubbedDetails(this.populer);
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +19,9 @@ class DetailScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: _buildDetailsMovie(populer),
           ),
+          
+          
+          
         ],
       ),
     );
@@ -114,6 +117,10 @@ class DetailScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
+
+
+
+            //This the Requerment Class
             Requerment(),
           ],
         ),
@@ -121,6 +128,8 @@ class DetailScreen extends StatelessWidget {
     );
   }
 
+
+//movie profile avatar and Tilte and Details thats mean Info
   Widget _buildMovieinfo(populer) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
@@ -164,6 +173,7 @@ class DetailScreen extends StatelessWidget {
     );
   }
 
+// Main header For Poster Image
   Widget _buildSliverHeader(populer) {
     return SliverPersistentHeader(
       delegate: DetailsSliverDelegate(
@@ -175,6 +185,8 @@ class DetailScreen extends StatelessWidget {
   }
 }
 
+
+//First Intro Image
 class DetailsSliverDelegate extends SliverPersistentHeaderDelegate {
   final double expandedheight;
   final double rounded_container_height;
@@ -213,31 +225,32 @@ class DetailsSliverDelegate extends SliverPersistentHeaderDelegate {
           ),
         ),
         Positioned(
-            left: 10,
-            top: expandedheight - 160 - shrinkOffset,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  populer.name,
-                  style: TextStyle(
-                    color: Colors.white,
-                    backgroundColor: Colors.black26,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
+          left: 10,
+          top: expandedheight - 160 - shrinkOffset,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                populer.name,
+                style: TextStyle(
+                  color: Colors.white,
+                  backgroundColor: Colors.black26,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
                 ),
-                Text(
-                  populer.releseDate,
-                  style: TextStyle(
-                    color: Colors.white,
-                    backgroundColor: Colors.black26,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w700,
-                  ),
+              ),
+              Text(
+                populer.releseDate,
+                style: TextStyle(
+                  color: Colors.white,
+                  backgroundColor: Colors.black26,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
                 ),
-              ],
-            )),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }

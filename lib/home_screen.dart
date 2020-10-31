@@ -1,7 +1,24 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
-import 'package:movie_server/screens/populer_horizontal.dart';
+import 'package:movie_server/screens/hindi_dubbed/hindi_dubbed.dart';
+import 'package:movie_server/screens/populer/populer_horizontal.dart';
 
 class HomeScreen extends StatelessWidget {
+  // realAds() {
+  //   return Container(
+  //     height: 80,
+  //     color: Colors.blue,
+  //     child: Text(
+  //       "For Ads",
+  //       style: TextStyle(
+  //         color: Colors.white,
+  //         fontSize: 20,
+  //       ),
+  //     ),
+  //   );
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -57,12 +74,12 @@ class HomeScreen extends StatelessWidget {
             ),
             SliverPadding(padding: EdgeInsets.only(top: 20)),
             SliverToBoxAdapter(
-              child: PopulerRowContainer(),
+              child: HindiDubbed(),
             ),
-            SliverPadding(padding: EdgeInsets.only(top: 20)),
-            SliverToBoxAdapter(
-              child: PopulerRowContainer(),
-            ),
+            // SliverPadding(padding: EdgeInsets.only(top: 20)),
+            // SliverToBoxAdapter(
+            //   child: realAds(),
+            // ),
             SliverPadding(padding: EdgeInsets.only(top: 20)),
             SliverToBoxAdapter(
               child: PopulerRowContainer(),

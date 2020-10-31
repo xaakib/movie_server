@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:movie_server/data/data.dart';
-import 'package:movie_server/screens/details_screen.dart';
+import 'package:movie_server/screens/populer/details_screen.dart';
 
-class PopulerRowContainer extends StatelessWidget {
+import 'details_hindi_dubbed.dart';
+
+class HindiDubbed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -11,7 +13,7 @@ class PopulerRowContainer extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 10),
           child: Text(
-            "Populer",
+            "Hindi Dubbed",
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
@@ -29,7 +31,8 @@ class PopulerRowContainer extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => DetailScreen(populer[index])));
+                          builder: (context) =>
+                              HinidDubbedDetails(populer[index])));
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
