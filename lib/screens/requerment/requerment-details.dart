@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:movie_server/data/data.dart';
 import 'package:movie_server/model/requearment.dart';
 
 class RequermentDetails extends StatelessWidget {

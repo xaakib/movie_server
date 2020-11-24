@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () {},
               ),
               title: Text(
-                "Movie Sever",
+                "Movie Server",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 28,
