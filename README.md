@@ -1,2 +1,2 @@
 # movie_server
- ipl html and http defendecny
+custom movie ui desing
