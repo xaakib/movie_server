@@ -80,10 +80,10 @@ final List<RequearmentModel> requerments = [
 
 final List<Screenshorts> screenshorts = [
   Screenshorts(
-    image: "assets/images/6.png",
+    image: "assets/images/s1.jpg",
   ),
   Screenshorts(
-    image: "assets/images/1.jpg",
+    image: "assets/images/s2.jpg",
   ),
   Screenshorts(
     image: "assets/images/2.jpg",
