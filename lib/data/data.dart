@@ -49,37 +49,30 @@ final List<Populer> populer = [
 
 final List<RequearmentModel> requerments = [
   RequearmentModel(
-    image: "assets/images/name.png",
-    name: "The xaa",
-    releseDate: "2000",
+    image: "assets/images/5.jpg",
+    name: "The Legend",
+    releseDate: "2020",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
   ),
   RequearmentModel(
-    image: "assets/images/13.jpg",
-    name: "Superman back",
+    image: "assets/images/4.jpg",
+    name: "The Legend",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
     releseDate: "1990",
   ),
   RequearmentModel(
-    releseDate: "2000",
-    image: "assets/images/11.jpg",
-    name: "Titanic",
-    description:
-        "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
-  ),
-  RequearmentModel(
-    image: "assets/images/name.png",
+    image: "assets/images/6.png",
     name: "IRon Man",
     releseDate: "2005",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
   ),
   RequearmentModel(
-    image: "assets/images/name.png",
-    name: "The Legend",
-    releseDate: "2020",
+    image: "assets/images/2.jpg",
+    name: "Superman back",
+    releseDate: "2005",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
   ),
@@ -87,15 +80,15 @@ final List<RequearmentModel> requerments = [
 
 final List<Screenshorts> screenshorts = [
   Screenshorts(
-    image: "assets/images/name.png",
+    image: "assets/images/6.png",
   ),
   Screenshorts(
-    image: "assets/images/13.jpg",
+    image: "assets/images/1.jpg",
   ),
   Screenshorts(
-    image: "assets/images/name.png",
+    image: "assets/images/2.jpg",
   ),
   Screenshorts(
-    image: "assets/images/11.jpg",
+    image: "assets/images/3.jpg",
   ),
 ];

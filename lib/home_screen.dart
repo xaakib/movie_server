@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
               elevation: 5,
               expandedHeight: 200,
               flexibleSpace: Image.asset(
-                "assets/images/1.jpg",
+                "assets/images/2.jpg",
                 fit: BoxFit.cover,
               ),
               actions: [

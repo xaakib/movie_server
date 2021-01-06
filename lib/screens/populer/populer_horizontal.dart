@@ -22,6 +22,7 @@ class PopulerRowContainer extends StatelessWidget {
           height: 250,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
+            physics: BouncingScrollPhysics(),
             itemCount: populer.length,
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
