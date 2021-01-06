@@ -4,14 +4,14 @@ import 'package:movie_server/model/screenshort.dart';
 
 final List<Populer> populer = [
   Populer(
-    image: "assets/images/name.png",
-    name: "The Req",
+    image: "assets/images/1.jpg",
+    name: "The Reqq",
     releseDate: "2000",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
   ),
   Populer(
-    image: "assets/images/13.jpg",
+    image: "assets/images/2.jpg",
     name: "Superman back",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
@@ -19,20 +19,27 @@ final List<Populer> populer = [
   ),
   Populer(
     releseDate: "2000",
-    image: "assets/images/11.jpg",
+    image: "assets/images/3.jpg",
     name: "Titanic",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
   ),
   Populer(
-    image: "assets/images/name.png",
+    image: "assets/images/6.png",
     name: "IRon Man",
     releseDate: "2005",
     description:
         "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
   ),
   Populer(
-    image: "assets/images/name.png",
+    image: "assets/images/4.jpg",
+    name: "The Legend",
+    releseDate: "2020",
+    description:
+        "This The Movie Descriptions for testing This The Movie Descriptions for testing This The Movie Descriptions for testingThis The Movie Descriptions for testing",
+  ),
+  Populer(
+    image: "assets/images/5.jpg",
     name: "The Legend",
     releseDate: "2020",
     description:

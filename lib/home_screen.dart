@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:movie_server/screens/hindi_dubbed/hindi_dubbed.dart';
 import 'package:movie_server/screens/populer/populer_horizontal.dart';
@@ -29,7 +28,7 @@ class HomeScreen extends StatelessWidget {
               elevation: 5,
               expandedHeight: 200,
               flexibleSpace: Image.asset(
-                "assets/images/name.png",
+                "assets/images/1.jpg",
                 fit: BoxFit.cover,
               ),
               actions: [
